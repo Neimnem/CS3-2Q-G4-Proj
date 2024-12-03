@@ -4,17 +4,14 @@
         <title>PDD News</title>
         <link rel="icon" href="icon.jpg" type="image/gif">
         <style>
-            /* Main + Header*/
+            /* Main + header*/
             body {
                 margin: 0;
                 background-color: #f4f4f4;
-		overflow-y: auto;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
+                overflow-y: auto;
             }
             
-           .header {
+            .header {
                 position: relative; 
                 top: 0;
                 left: 0;
@@ -40,6 +37,7 @@
             .logo img {
                 max-height: 50px;
                 width: auto;
+                padding-left: 30px;
             }
         
             .nav-list {
@@ -163,14 +161,14 @@
                 color: #ff4655;
                 cursor: pointer;
             }
-
+		
             /* Section + article + vid */
             .section {
                 position: absolute;
+                margin-left: 480px;
                 z-index: 1;
-                margin-left: 490px;
-				margin-top: auto;
-                max-height: 80px;
+		margin-top: auto;
+		max-height: 80px;
             }
             .center {
                 display: block;
@@ -179,7 +177,7 @@
                 width: 75%;
                 border-radius: 10px;
                 transition: transform 0.3s;
-                margin-top: 280px;
+                margin-top: 60px;
             }
             .center:hover {
                 transform: scale(1.05);
@@ -190,8 +188,8 @@
                 font-size: 40px;
                 margin-top: 10px;
                 text-align: center;
-				max-width: 800px;
-				margin: 20px auto;
+		max-width: 800px;
+		margin: 20px auto;  
             }
             .caption:hover {
                 color: rgb(255, 70, 85);
@@ -206,12 +204,11 @@
                 padding: 40px;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			
             }
 
             /* Aside */
             .asides {
-                padding-bottom: 40cap;
+                padding-bottom: 70cap;
             }
             aside.left {
                 width: 20%;
@@ -226,7 +223,7 @@
                 background-image: linear-gradient(rgb(255, 70, 85), rgb(180, 0, 0));
                 margin-top: 10px;
             }
-            .header {
+            .sub-header {
                 color: rgb(15, 25, 35); 
                 font-family: Tungsten-Bold, Impact, sans-serif;
                 font-size: 30px;
@@ -323,7 +320,7 @@
                 font-weight: 520;
                 letter-spacing: 1px;
             }
-            .left .description:hover, .header:hover {
+            .left .description:hover, .sub-header:hover {
                 color: rgb(255, 70, 85);
                 transition-duration: 0.3s;
             }
@@ -349,8 +346,8 @@
                 background-color: #0d0d0d;
                 color: rgb(255, 255, 255);
                 position: relative;
-                margin-top: auto;
-                padding-top: 50px;
+                margin-top: 1200px;
+                padding-top: 100px;
             }
             .footer-info {
                 text-align: center;
@@ -424,7 +421,7 @@
         <aside class="asides">
             <!-- Left -->
             <aside class="left">
-                <span class="header">THE LATEST<br><br></span>
+                <span class="sub-header">THE LATEST<br><br></span>
                 <!-- 1 -->
                 <section>
                     <div class="visuals">
