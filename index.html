@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,21 +12,20 @@
                 overflow-y: auto;
             }
             
-            /* Main + Header */
             .header {
-                position: relative;
+                position: relative; 
                 top: 0;
                 left: 0;
                 width: 100%;
                 background-color: #000;
-                padding: 2% 5%;
+                padding: 10px 20px;
                 z-index: 1000;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-            
+           
             .container {
                 display: flex;
                 justify-content: space-between;
@@ -34,16 +34,16 @@
                 margin: 0 auto;
                 align-items: center;
             }
-            
+        
             .logo img {
-                max-height: 5vw;
+                max-height: 50px;
                 width: auto;
             }
-            
+        
             .nav-list {
                 list-style: none;
                 display: flex;
-                gap: 5vw; /* Adjusts spacing based on viewport */
+                gap: 30px;
                 margin: 0;
                 padding: 0;
             }
@@ -51,12 +51,12 @@
             .nav-list a {
                 text-decoration: none;
                 color: #fff;
-                font-size: 1.5vw; /* Font size relative to viewport width */
+                font-size: 20px;
                 font-weight: 700;
                 font-family: 'Exo 2', sans-serif !important;
                 text-transform: uppercase;
-                padding: 1.5vh 2vw; /* Use viewport height and width for padding */
-                letter-spacing: 0.2vw;
+                padding: 15px 10px;
+                letter-spacing: 2px;
                 position: relative;
                 transition: color 0.2s ease;
             }
@@ -72,23 +72,19 @@
                 transition: width 0.3s ease;
                 border-radius: 5px;
             }
-            
             .nav-list a:hover::after, .nav-list a:active::after {
                 width: 100%;
                 background-color: #ff4655;
             }
-            
             .nav-list a:hover, .nav-list a:active {
                 color: #ff4655;
             }
-            
             .actions {
                 display: flex;
-                right: 2vw; /* Adjusted to viewport width */
+                right: 20px;
                 align-items: center;
-                gap: 2vw; /* Gap based on viewport width */
+                gap: 10px;
             }
-            
             .search {
                 position: relative;
                 display: flex;
@@ -97,16 +93,14 @@
                 border: 1px solid transparent;
                 border-radius: 9px;
                 transition: all 0.3s ease;
-                width: 5vw; /* Set a relative width */
-                height: 5vw; /* Set relative height */
+                width: 40px;
+                height: 40px;
                 overflow: hidden;
             }
-            
             .search:focus-within {
-                width: 25vw; /* Expands width when focused */
+                width: 200px;
                 border: 1px solid #ff4655;
             }
-            
             .search-btn {
                 background: none;
                 color: #ffffff;
@@ -115,57 +109,52 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 5vw;
-                height: 5vw;
+                width: 40px;
+                height: 40px;
                 position: absolute;
                 left: 0;
                 top: 0;
                 z-index: 1;
             }
-            
             .search-btn img {
-                width: 50%;
-                height: 50%;
+                width: 20px;
+                height: 20px;
                 object-fit: contain;
                 transition: filter 0.3s ease;
             }
-            
             .search-btn:hover img {
                 filter: brightness(0) saturate(100%) invert(26%) sepia(100%) saturate(500%) hue-rotate(346deg) brightness(110%) contrast(105%);
+                transition: filter 0.3s ease;
             }
-            
             .search-input {
                 background: #222;
                 border: none;
                 color: #fff;
-                font-size: 2vw; /* Font size relative to viewport */
+                font-size: 16px;
                 outline: none;
                 width: 0;
                 opacity: 0;
                 transform: scaleX(0);
                 transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
-                padding: 1vh 2vw 1vh 5vw;
+                padding: 5px 10px 5px 40px;
                 border-radius: 9px;
             }
-            
             .search:focus-within .search-input {
-                width: 80%;
+                width: 160px;
                 opacity: 1;
                 transform: scaleX(1);
             }
-            
             .btn {
                 text-decoration: none;
                 background-color: #000000;
                 color: #fff;
-                padding: 1vh 3vw;
-                font-size: 1.6vw;
+                padding: 10px 20px;
+                font-size: 16px;
                 font-weight: 700;
                 font-family: 'Exo 2', sans-serif !important;
                 text-transform: uppercase;
                 transition: all 0.3s ease;
             }
-            
             .btn:hover, .btn:active {
                 background-color: #262626;
                 border-radius: 9px;
