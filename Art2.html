@@ -4,6 +4,7 @@
         <title>PDD News</title>
         <link rel="icon" href="icon.jpg" type="image/gif">
         <style>
+            /* Main + header*/
             body {
                 margin: 0;
                 background-color: #f4f4f4;
@@ -70,12 +71,14 @@
                 background-color: #ff4655;
                 transition: width 0.3s ease;
                 border-radius: 5px;
-	    }
-
-	    .nav-list a:active {
-        	color: #ff4655;
             }
-		
+            .nav-list a:hover::after, .nav-list a:active::after {
+                width: 100%;
+                background-color: #ff4655;
+            }
+            .nav-list a:hover, .nav-list a:active {
+                color: #ff4655;
+            }
             .actions {
                 display: flex;
                 right: 20px;
@@ -343,7 +346,7 @@
                 background-color: #0d0d0d;
                 color: rgb(255, 255, 255);
                 position: relative;
-                margin-top: 1300px;
+                margin-top: 1200px;
                 padding-top: 100px;
             }
             .footer-info {
