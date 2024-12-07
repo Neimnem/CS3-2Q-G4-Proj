@@ -627,7 +627,7 @@ mark {
     text-align: justify;
     z-index: 1;
 }
-.description:hover {
+.description-2:hover {
     color: rgb(255, 70, 85);
     transition: 0.5s !important;
 }
