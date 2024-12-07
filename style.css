@@ -486,7 +486,7 @@ mark {
 .article1:hover .music1,
 .article1:hover .music2,
 .article1:hover .redirect_button,
-.article1:hover .description,
+.article1:hover .description-2,
 .article1:hover .information_sub-header,
 .article1:hover .information {
     transform: translateY(-3vh);
@@ -613,7 +613,7 @@ mark {
     z-index: 5;
     pointer-events: auto;
 }
-.description {
+.description-2 {
     margin-top: 1025px;
     display: block;
     position: absolute;
